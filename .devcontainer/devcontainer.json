@@ -4,11 +4,7 @@
 	"image": "mcr.microsoft.com/devcontainers/python:1-3.10-buster",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
-	"features": {
-		//"ghcr.io/devcontainers-contrib/features/black:2": {},
-		//"ghcr.io/devcontainers-contrib/features/isort:2": {},
-		//"ghcr.io/devcontainers-contrib/features/ruff:1": {}
-	},
+	"features": {},
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "pip3 install --user -r requirements.txt",
@@ -30,8 +26,8 @@
 					"editor.codeActionsOnSave": {
 						"source.fixAll.ruff": true,
 						"source.organizeImports.ruff": true
-					}
-					//"editor.defaultFormatter": "ms-python.black-formatter"
+					},
+					"editor.defaultFormatter": "ms-python.black-formatter"
 				},
 				"cSpell.language": "en-GB",
 				"autoDocstring.docstringFormat": "google",
@@ -40,7 +36,9 @@
 			"extensions": [
 				"charliermarsh.ruff", 
 				"ms-python.black-formatter", 
-				"njpwerner.autodocstring"
+				"njpwerner.autodocstring",
+				"streetsidesoftware.code-spell-checker",
+				"vscode-icons-team.vscode-icons"
 			]
 		}
 	}
