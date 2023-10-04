@@ -5,19 +5,43 @@
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
-		"ghcr.io/devcontainers/features/git:1": {},
-		"ghcr.io/devcontainers-contrib/features/git-lfs:1": {},
-		"ghcr.io/devcontainers-contrib/features/black:2": {},
-		"ghcr.io/devcontainers-contrib/features/isort:2": {},
-		"ghcr.io/devcontainers-contrib/features/ruff:1": {}
+		//"ghcr.io/devcontainers-contrib/features/black:2": {},
+		//"ghcr.io/devcontainers-contrib/features/isort:2": {},
+		//"ghcr.io/devcontainers-contrib/features/ruff:1": {}
 	},
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip3 install --user -r requirements.txt"
+	"postCreateCommand": "pip3 install --user -r requirements.txt",
 
 	// Configure tool-specific properties.
-	// "customizations": {},
-
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"files.autoSave": "afterDelay",
+				"files.autoSaveDelay": 5000,
+				"editor.wordWrap": "on",
+				"editor.rulers": [
+					88
+				],
+				"[python]": {
+					"editor.insertSpaces": true,
+					"editor.tabSize": 4,
+					"editor.formatOnSave": true,
+					"editor.codeActionsOnSave": {
+						"source.fixAll.ruff": true,
+						"source.organizeImports.ruff": true
+					}
+					//"editor.defaultFormatter": "ms-python.black-formatter"
+				},
+				"cSpell.language": "en-GB",
+				"autoDocstring.docstringFormat": "google",
+				"workbench.preferredLightColorTheme": "Default Light+"
+			},
+			"extensions": [
+				"charliermarsh.ruff", 
+				"ms-python.black-formatter", 
+				"njpwerner.autodocstring"
+			]
+		}
+	}
 }
