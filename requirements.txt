@@ -1,4 +1,5 @@
-opencv-python
 ipykernel
 ipython
 ipywidgets
+opencv-python
+pillow
