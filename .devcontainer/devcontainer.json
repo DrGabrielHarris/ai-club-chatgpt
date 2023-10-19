@@ -35,6 +35,7 @@
 			},
 			"extensions": [
 				"ms-toolsai.jupyter",
+				"ms-python.vscode-pylance",
 				"charliermarsh.ruff", 
 				"ms-python.black-formatter", 
 				"njpwerner.autodocstring",
