@@ -31,7 +31,8 @@
 				},
 				"cSpell.language": "en-GB",
 				"autoDocstring.docstringFormat": "google",
-				"workbench.preferredLightColorTheme": "Default Light+"
+				"workbench.preferredLightColorTheme": "Default Light+",
+				"jupyter.notebookFileRoot": "${workspaceFolder}}"
 			},
 			"extensions": [
 				"ms-toolsai.jupyter",
