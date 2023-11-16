@@ -2,4 +2,5 @@ ipykernel
 ipython
 ipywidgets
 opencv-python
-pillow
+Pillow
+ultralytics
