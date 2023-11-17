@@ -7,9 +7,7 @@
 	"features": {},
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip install -r requirements.txt",
-	// install OpenGL libraries
-	"postCreateCommand": "sudo apt update && sudo apt install libgl1-mesa-glx -y",
+	"postCreateCommand": "pip install -r requirements.txt && sudo apt update && sudo apt install libgl1-mesa-glx -y",
 
 	// Configure tool-specific properties.
 	"customizations": {
