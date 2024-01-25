@@ -40,7 +40,7 @@
 				"ms-python.vscode-pylance",
 				"ms-toolsai.jupyter",
 				"charliermarsh.ruff",
-				"streetsidesoftware.code-spell-checker",
+				"streetsidesoftware.code-spell-checker"
 			]
 		}
 	}
