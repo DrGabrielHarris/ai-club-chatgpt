@@ -1,12 +1,8 @@
-// For format details, see https://aka.ms/devcontainer.json.
 {
 	"name": "Python 3",
 	"image": "mcr.microsoft.com/devcontainers/python:1-3.10-bookworm",
-	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {},
-	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "pip install -r requirements.txt && sudo apt update && sudo apt install libgl1-mesa-glx -y",
-	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
 			"settings": {
@@ -31,7 +27,6 @@
 					"notebook.source.fixAll": true,
 					"notebook.source.organizeImports": true
 				},
-				"cSpell.language": "en-GB",
 				"workbench.preferredLightColorTheme": "Default Light+",
 				"jupyter.notebookFileRoot": "${workspaceFolder}}"
 			},
@@ -39,8 +34,7 @@
 				"ms-python.python",
 				"ms-python.vscode-pylance",
 				"ms-toolsai.jupyter",
-				"charliermarsh.ruff",
-				"streetsidesoftware.code-spell-checker"
+				"charliermarsh.ruff"
 			]
 		}
 	}
