@@ -1,7 +1,8 @@
+gensim
 ipykernel
 ipython
 ipywidgets
 opencv-python
 Pillow
-ultralytics
 spacy
+ultralytics
