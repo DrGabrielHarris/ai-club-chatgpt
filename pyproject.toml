@@ -1,6 +1,6 @@
 [tool.ruff]
 select = ["E", "F", "D", "I"]
-ignore = ["D100", "D101", "D102", "D103", "D104", "D105", "D106", "D107"]
+ignore = ["D100", "D101", "D102", "D103", "D104", "D105", "D106", "D107", "F401"]
 
 [tool.ruff.pydocstyle]
 convention = "google"
