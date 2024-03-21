@@ -2,7 +2,9 @@ gensim
 ipykernel
 ipython
 ipywidgets
+matplotlib
 opencv-python
 Pillow
 spacy
 ultralytics
+wordcloud
