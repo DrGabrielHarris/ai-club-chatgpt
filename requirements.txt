@@ -2,4 +2,3 @@ ipykernel
 ipython
 ipywidgets
 openai
-python-dotenv
