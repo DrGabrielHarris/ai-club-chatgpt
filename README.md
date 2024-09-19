@@ -1,1 +1,1 @@
-# python-ai-club
+# AI CLUB
