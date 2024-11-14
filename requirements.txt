@@ -4,3 +4,4 @@ ipywidgets
 openai
 python-dotenv
 tiktoken
+pandas
