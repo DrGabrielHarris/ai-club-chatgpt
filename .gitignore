@@ -4,3 +4,4 @@ profile_default/
 ipython_config.py
 .venv
 .DS_Store
+test.py
